@@ -1,0 +1,10 @@
+{
+    //jsonc is a modified json to support comments
+    "test": {
+        //this is for a test
+        "key": "value"              //key/value pair
+        /* actually not needed
+        "new": "value"
+        */
+    }
+}

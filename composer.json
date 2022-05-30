@@ -1,0 +1,41 @@
+{
+    "name": "robertsaupe/php-json",
+    "description": "php library for json and jsonc parsing",
+    "keywords": [
+        "php",
+        "php8",
+        "library",
+        "json",
+        "jsonc",
+        "parsing"
+    ],
+    "homepage": "https://github.com/robertsaupe/php-json",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robert Saupe",
+            "email": "mail@robertsaupe.de",
+            "homepage": "https://robertsaupe.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0 || ^8.1",
+        "justinrainbow/json-schema": "^5.2",
+        "seld/jsonlint": "^1.9",
+        "webmozart/assert": "^1.10"
+    },
+    "autoload": {
+        "psr-4": { 
+            "robertsaupe\\Json\\": "src/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.0.0"
+        },
+        "platform-check": false,
+        "sort-packages": true
+    }
+}
