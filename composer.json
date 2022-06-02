@@ -21,10 +21,10 @@
         }
     ],
     "require": {
-        "php": "^8.0 || ^8.1",
-        "justinrainbow/json-schema": "^5.2",
-        "seld/jsonlint": "^1.9",
-        "webmozart/assert": "^1.10"
+        "php": ">=8.0.0",
+        "justinrainbow/json-schema": "^5",
+        "seld/jsonlint": "^1",
+        "webmozart/assert": "^1"
     },
     "autoload": {
         "psr-4": { 
