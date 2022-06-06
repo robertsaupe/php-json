@@ -60,6 +60,7 @@ class Json {
     }
 
     /**
+     * @return mixed[]|stdClass
      * @throws ParsingException
      */
     public function decodeFile(string $file, bool $assoc = false): array|stdClass {
@@ -70,6 +71,7 @@ class Json {
     }
 
     /**
+     * @return mixed[]|stdClass
      * @throws ParsingException
      */
     public function decode(string $jsonString, bool $assoc = false): array|stdClass {
@@ -90,10 +92,10 @@ class Json {
      * Validates the decoded JSON data.
      *
      * @param string   $file   The JSON file
-     * @param stdClass $json   The decoded JSON data
+     * @param stdClass $jsonObject   The decoded JSON data
      * @param stdClass $schema The JSON schema
      *
-     * @throws JsonValidationException If the JSON data failed validation
+     * @throws JsonValidateException If the JSON data failed validation
      */
     public function validate(string $file, stdClass $jsonObject, stdClass $schema): void {
         $validator = new Validator();

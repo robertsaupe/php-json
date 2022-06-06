@@ -24,12 +24,10 @@ use Webmozart\Assert\Assert;
  */
 final class IOException extends RuntimeException {
 
-    private $readFile;
+    private ?string $readFile;
 
     /**
      * {@inheritdoc}
-     *
-     * @param string[] $errors
      */
     public function __construct(
         string $message,

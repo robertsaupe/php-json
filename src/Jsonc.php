@@ -39,7 +39,7 @@ class Jsonc extends Json {
         return parent::decode($jsonString, $assoc);
     }
 
-    private function stripComments($jsoncString): string {
+    private function stripComments(string $jsoncString): string {
         // https://stackoverflow.com/a/43439966
         return preg_replace('~(" (?:\\\\. | [^"])*+ ") | \# [^\v]*+ | // [^\v]*+ | /\* .*? \*/~xs', '$1', $jsoncString);
     }

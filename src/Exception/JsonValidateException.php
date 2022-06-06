@@ -22,10 +22,14 @@ use Webmozart\Assert\Assert;
 /**
  * @internal
  */
-final class JsonValidateException extends UnexpectedValueException {
+final class JsonValidateException extends UnexpectedValueException implements Throwable {
 
-    private $validatedFile;
-    private $errors;
+    private ?string $validatedFile;
+
+    /**
+     * @var string[]
+     */
+    private array $errors;
 
     /**
      * {@inheritdoc}
